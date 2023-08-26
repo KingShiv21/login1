@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="/login" method="POST">
+        <%= locals.msg %>
+        <hr>
+        id <input type="text" name="email" value="<%= locals.email %>">
+        <hr>
+        password <input type="password" name="password">
+        <%= locals.message %>
+     
+     <button type="submit"><h1>login</h1></button>
+     <hr>
+     
+     </form>
+
+     <form action="/" method="get">
+
+     Not an user, then
+     
+     <button type="submit"><h1>Register</h1></button>
+     
+     </form>
+
+</body>
+</html>
